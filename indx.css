@@ -1,0 +1,87 @@
+body{
+    margin: 80px auto;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: black;
+     overflow-x: hidden;
+    
+}
+h1{
+    color: aqua;
+}
+body> p{
+    color: rgba(238, 9, 97, 0.938);
+}
+
+.pricebox{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 1000px;
+ height:auto;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform:translate(-50%,-50%) ;
+ gap: 20px;
+ /* background-color: green; */
+
+}
+.pricebox p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.plan{
+    width: 100%;
+  max-width: 500px;
+  height: auto;
+    gap: 20px;
+    /* border:1px solid; */
+    border-radius: 10px;
+    background-color: grey;
+    text-align: center;
+}
+.plan:hover{
+    transform: scale(0.9);
+    
+}
+.plan li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15); /* light transparent line */
+  padding: 10px 0;
+  transition: border-color 0.3s ease;
+    /* margin: 5px 0; */
+}
+.plan li:hover{
+    border-bottom: 2px solid rgba(0, 123, 255, 0.5);
+}
+.plan ul{
+    font-size: 20px;
+    text-align:center;
+    list-style: none;
+     padding: 0;
+}
+button{
+    background-color:rgb(5, 75, 180);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+}
+
+button:hover{
+    transform: scale(1.1);
+   background-color: blue;
+}
+/* Responsive Design */
+@media (max-width: 780px) {
+  .pricebox {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .plan {
+    width: 100%;
+  }
+}
